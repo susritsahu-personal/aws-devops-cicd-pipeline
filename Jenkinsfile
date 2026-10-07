@@ -40,7 +40,7 @@ pipeline {
             steps {
                 bat '''
                     set "PATH=%PATH%;%DOCKER_PATH%"
-                    docker run -d --name %CONTAINER_NAME% -p 8080:80 %IMAGE_NAME%:latest
+                    docker run -d --restart unless-stopped --name %CONTAINER_NAME% -p 8080:80 %IMAGE_NAME%:latest
                 '''
             }
         }
