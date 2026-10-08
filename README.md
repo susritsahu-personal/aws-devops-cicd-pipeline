@@ -105,6 +105,26 @@ aws-devops-cicd-pipeline/
 ├── index.html
 └── README.md
 ```
+## Project Evidence
+
+### GitHub Repository
+![GitHub Repository](screenshots/01-github-repository.png)
+
+### Jenkins Automatic Trigger
+![Jenkins Automatic Trigger](screenshots/02-jenkins-automatic-trigger.png)
+
+### Jenkins AWS SSM Deployment
+![Jenkins AWS SSM Deployment](screenshots/03-jenkins-ssm-deployment-success.png)
+
+### EC2 Docker Container
+![EC2 Docker Container](screenshots/04-ec2-docker-container.png)
+
+### CI/CD Pipeline Success
+![CI/CD Pipeline Success](screenshots/05-cicd-pipeline-success.png)
+
+### AWS Live Application
+![AWS Live Application](screenshots/06-aws-live-application.png)
+
 ## Project Result
 A code change pushed to GitHub can automatically trigger Jenkins and deploy the updated Dockerized application to AWS EC2.
 The project demonstrates a complete CI/CD deployment workflow using GitHub, Jenkins, Docker, AWS EC2 and AWS Systems Manager.
