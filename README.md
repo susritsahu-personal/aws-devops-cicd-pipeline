@@ -106,7 +106,6 @@ aws-devops-cicd-pipeline/
 ├── index.html
 └── README.md
 ```
-
 ## Project Result
 A code change pushed to GitHub can automatically trigger Jenkins and deploy the updated Dockerized application to AWS EC2.
 The project demonstrates a complete CI/CD deployment workflow using GitHub, Jenkins, Docker, AWS EC2 and AWS Systems Manager.
