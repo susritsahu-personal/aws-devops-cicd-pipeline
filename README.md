@@ -39,7 +39,6 @@ Docker + Nginx
    │
    ▼
 Web Application
-
 ```
 ## Technologies Used
 - Git
