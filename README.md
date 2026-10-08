@@ -10,7 +10,7 @@ The application runs inside a Docker container using Nginx on Amazon Linux.
 
 ## CI/CD Workflow
 
-```
+```text
 Developer
    │
    ▼
@@ -39,8 +39,9 @@ Docker + Nginx
    │
    ▼
 Web Application
+
 ```
-Technologies Used
+## Technologies Used
 - Git
 - GitHub
 - Jenkins
@@ -51,12 +52,12 @@ Technologies Used
 - Linux
 - Nginx
 - AWS CLI
-AWS Infrastructure
+## AWS Infrastructure
 - EC2: Amazon Linux 2023 running the web application
 - IAM: Permissions for Jenkins to use AWS Systems Manager
 - Systems Manager: Used for remote deployment without SSH
 - Security Group: Allows HTTP traffic on port 80
-Deployment Process
+## Deployment Process
 1. Application source code is maintained in GitHub.
 2. Jenkins monitors the GitHub repository for changes.
 3. A new commit automatically triggers the Jenkins pipeline.
@@ -68,10 +69,10 @@ Deployment Process
 9. The previous application container is replaced.
 10. A new Docker container is started on port 80.
 11. The updated application becomes available through the EC2 public endpoint.
-Application
+## Application
 The web application is a simple Nginx-based HTML application running inside Docker.
 The Docker container exposes port 80 and serves the application through Nginx.
-Jenkins Pipeline
+## Jenkins Pipeline
 The Jenkins pipeline is defined in a Jenkinsfile stored in the GitHub repository.
 The pipeline performs:
 - AWS identity verification
@@ -81,7 +82,7 @@ The pipeline performs:
 - Docker image build
 - Docker container replacement
 - Deployment status verification
-Key Learning Outcomes
+## Key Learning Outcomes
 This project provided hands-on experience with:
 - Git-based source control
 - GitHub repository management
@@ -95,17 +96,17 @@ This project provided hands-on experience with:
 - Nginx web serving
 - AWS CLI
 - Automated application deployment
-```text
-Project Structure
+## Project Structure
 
+```text
 aws-devops-cicd-pipeline/
 │
 ├── Dockerfile
 ├── Jenkinsfile
 ├── index.html
 └── README.md
+```
 
-Project Result
+## Project Result
 A code change pushed to GitHub can automatically trigger Jenkins and deploy the updated Dockerized application to AWS EC2.
 The project demonstrates a complete CI/CD deployment workflow using GitHub, Jenkins, Docker, AWS EC2 and AWS Systems Manager.
-```
